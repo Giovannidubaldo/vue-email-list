@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <div id="app">
-        <ul>
+        <!-- BONUS inserire v-if nel contenitore del v-for (in questo caso <ul>) -->
+        <ul v-if="emails.length == 10">
             <li v-for="name in emails">{{name}}</li>
         </ul>
     </div>
